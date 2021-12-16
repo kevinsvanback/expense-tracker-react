@@ -1,5 +1,7 @@
 import Expenses from "./components/Expenses";
 
+// Hi github :)
+
 function App() {
   const expenses = [
     {
