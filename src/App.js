@@ -7,13 +7,13 @@ const DUMMY_DATA = [
     id: 'e1',
     title: 'Padel',
     amount: 75,
-    date: new Date(2021, 11, 15)
+    date: new Date(2019, 11, 15)
   },
   {
     id: 'e2',
     title: 'Beer',
     amount: 149,
-    date: new Date(2021, 11, 17)
+    date: new Date(2020, 11, 17)
   },
   {
     id: 'e3',
@@ -25,7 +25,7 @@ const DUMMY_DATA = [
     id: 'e4',
     title: 'Champagne',
     amount: 379,
-    date: new Date(2021, 11, 31)
+    date: new Date(2022, 11, 31)
   }
 ];
 
@@ -34,7 +34,6 @@ const App = () => {
 
   const addExpenseHandler = (expense) => {
     console.log('In App.js');
-    // setExpenses(prevState => prevState, expense);
     setExpenses(prevExpenses => [expense, ...prevExpenses]);
   };
 
