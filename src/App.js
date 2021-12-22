@@ -7,7 +7,7 @@ const DUMMY_DATA = [
     id: 'e1',
     title: 'Padel',
     amount: 75,
-    date: new Date(2019, 11, 15)
+    date: new Date(2020, 11, 15)
   },
   {
     id: 'e2',
