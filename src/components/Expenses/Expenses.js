@@ -14,10 +14,12 @@ const Expenses = (props) => {
 
   const filteredExpenses = props.expenses.filter(expense => expense.date.getFullYear().toString() === selectedYear);
 
-  return (<Card className='expenses'>
-    <ExpensesFilter selectedYear={selectedYear} onSelectedYear={addSelectedYear} />
-    <ExpensesList filteredExpenses={filteredExpenses} />
-  </Card>);
+  return (
+    <Card className='expenses'>
+      <ExpensesFilter selectedYear={selectedYear} onSelectedYear={addSelectedYear} />
+      <ExpensesList filteredExpenses={filteredExpenses} />
+    </Card>
+  );
 };
 
 export default Expenses;

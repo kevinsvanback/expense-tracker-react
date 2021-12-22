@@ -11,6 +11,7 @@ const NewExpense = (props) => {
       id: Math.random().toString()
     };
     props.onAddExpense(expenseData);
+    setIsAddingExpense(false);
   };
 
   const showFormHandler = () => {
@@ -21,10 +22,12 @@ const NewExpense = (props) => {
     setIsAddingExpense(false);
   };
 
-  return (<div className='new-expense'>
-    {!isAddingExpense && <button onClick={showFormHandler}>Add New Expense</button>}
-    {isAddingExpense && < ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={hideFormHandler} />}
-  </div>);
+  return (
+    <div className='new-expense'>
+      {!isAddingExpense && <button onClick={showFormHandler}>Add New Expense</button>}
+      {isAddingExpense && < ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={hideFormHandler} />}
+    </div>
+  );
 };
 
 export default NewExpense;
