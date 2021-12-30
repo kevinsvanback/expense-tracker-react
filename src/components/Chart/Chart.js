@@ -10,3 +10,5 @@ const Chart = (props) => {
 };
 
 export default Chart;
+
+const y = 10;

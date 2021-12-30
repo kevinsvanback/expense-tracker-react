@@ -10,7 +10,11 @@ const ChartBar = (props) => {
     </div>
   );
 };
+const x = 4;
+// ddd
 
 export default ChartBar;
 
-// Hi
+
+// asd
+// dasdd
