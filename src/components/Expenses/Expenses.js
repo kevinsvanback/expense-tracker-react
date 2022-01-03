@@ -6,10 +6,9 @@ import Card from '../UI/Card';
 import './Expenses.css';
 
 const Expenses = (props) => {
-  const [selectedYear, setSelectedYear] = useState('2021');
+  const [selectedYear, setSelectedYear] = useState('2022');
 
   const addSelectedYear = (year) => {
-    console.log(`Coming from Expenses: ${year}`);
     setSelectedYear(year);
   };
 
