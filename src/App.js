@@ -24,13 +24,13 @@ const DUMMY_DATA = [
   {
     id: 'e4',
     title: 'Dummy Expense 4',
-    amount: 379,
+    amount: 379.49,
     date: new Date(2022, 11, 31)
   },
   {
     id: 'e5',
     title: 'Dummy Expense 5',
-    amount: 199,
+    amount: 199.99,
     date: new Date(2021, 2, 25)
   },
   {
@@ -60,7 +60,7 @@ const DUMMY_DATA = [
   {
     id: 'e10',
     title: 'Dummy Expense 10',
-    amount: 12,
+    amount: 12.99,
     date: new Date(2022, 4, 10)
   }
 ];
